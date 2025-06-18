@@ -494,3 +494,52 @@ output:
  *  *
  *
 */
+/*
+19.class Pattern1 {
+public static void main(String[] args) {
+int n = 6; 
+for (int i = 0; i < n; i++) {
+ for (int j = 0; j < i; j++) {
+System.out.print("*");
+ }
+ System.out.println(i);
+}
+}
+}
+output:
+0
+*1
+**2
+***3
+****4
+*****5
+ */
+/*
+20.class Pattern1 {
+ public static void main(String[] args) {
+        int n = 7; 
+
+        for (int i = 1; i <= n; i++) {
+            for (int j = 1; j <= n; j++) {
+               
+                if (i==1 || j ==1  || j ==i)
+                    System.out.print(" * ");
+                else
+                    System.out.print("  ");
+            
+}
+            System.out.println();
+        
+    }
+}
+}
+output:
+ *  *  *  *  *  *  *
+ *  *
+ *    *
+ *      *
+ *        *
+ *          *
+ *            *
+*/
+
