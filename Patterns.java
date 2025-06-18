@@ -199,71 +199,270 @@ output:
 * * * * * 
 */   
 /*
-9.import java.util.Scanner;
-class BinaryNumber
+9.class Pattern1
 {
-public static void main(String[]args)
+public static void main(String []args)
 {
-Scanner sc=new Scanner(System.in);
-System.out.println("enter a number:");
-int n=sc.nextInt();
-for( int i=1;i<=n;i++)
+int n=5;
+for(int i=1;i<=n;i++)
 {
-for(int j=1;j<=n;j++)
+for(int j=1;j<=n-i;j++)
 {
-if(j%2==0)
-{
-System.out.print(0);
+System.out.print(" ");
 }
-else
-{
-System.out.print(1);
-}
-}
-System.out.println();
-}
-}
-}
-
-Output:
-enter a number:
-5
-10101
-10101
-10101
-10101
-10101
-*/
-/*
-10.import java.util.Scanner;
-class NumberPyramid
-{
-public static void main(String[]args)
-{
-int z=1;
-Scanner sc=new Scanner(System.in);
-System.out.println("enter a number:");
-int n=sc.nextInt();
-for( int i=1;i<=n;i++)
-{
-for(int j=1;j<=(n-i);j++)
-{
- System.out.print(" ");
-}
+int num=2;
 for(int k=1;k<=i;k++)
 {
-System.out.print((k*2)+" ");
+System.out.print(num+" ");
+num+=2;
 }
 System.out.println();
 }
 }
-}
-Output:
-enter a number:
-5
-    2
+}output:
+     2
    2 4
   2 4 6
  2 4 6 8
 2 4 6 8 10
+*/
+/*
+10.class Pattern1 {
+public static void main(String[] args) 
+{
+ String word = "INDIA";
+ for (int i = 1; i <=5; i++) 
+ {
+  for (int j = 0; j < i; j++) 
+  {
+  System.out.print(word.charAt(j) + " ");
+}
+System.out.println();
+}
+}
+}
+Output:
+I 
+I N 
+I N D 
+I N D I 
+I N D I A 
+*/
+/*
+11.class Patterns
+{
+public static void main(String[]args)
+{
+for(int i=1;i<=5;i++)
+ {
+ for(int j=1;j<=5-i;j++)
+ {
+System.out.print(" ");
+ }
+for(int k=1;k<=(2*i-1);k++)
+{
+System.out.print("*");
+}
+ System.out.println();
+}
+}
+}
+output:
+    *
+   ***
+  *****
+ *******
+*********
+*/
+/*
+12.public class Pattern1 {
+ public static void main(String[] args) 
+ {
+ int rows = 4; 
+ for (int i = 1; i <= rows; i++) 
+ {
+for (int j = 1; j <= rows - i; j++) 
+{
+System.out.print("  ");
+}
+ for (int k = 1; k <= 2 * i - 1; k++) 
+ {
+ System.out.print("* ");
+  }
+System.out.println();
+}
+for (int i = rows - 1; i >= 1; i--) 
+{
+for (int j = 1; j <= rows - i; j++) 
+ {
+System.out.print("  ");
+ }
+for (int k = 1; k <= 2 * i - 1; k++) {
+ System.out.print("* ");
+   }
+ System.out.println();
+ }
+ }
+}
+output:
+       *
+    * * *
+  * * * * *
+* * * * * * *
+  * * * * *
+    * * *
+      *
+*/
+/*13. class Pattern1 {
+ public static void main(String[] args) {
+int n = 5; 
+for (int i = 1; i <= n; i++) {
+ for (int j = i; j < n; j++)
+ System.out.print(" ");
+for (int j = 1; j <= (2 * i - 1); j++) {
+if (j == 1 || j == (2 * i - 1))
+System.out.print("*");
+else
+ System.out.print(" ");
+ }
+ System.out.println();
+  }
+ for (int i = n - 1; i >= 1; i--) {
+for (int j = n; j > i; j--)
+System.out.print(" ");
+for (int j = 1; j <= (2 * i - 1); j++) {
+ if (j == 1 || j == (2 * i - 1))
+  System.out.print("*");
+else
+ System.out.print(" ");
+}
+ System.out.println();
+ }
+}
+}
+output:
+    *
+   * *
+  *   *
+ *     *
+*       *
+ *     *
+  *   *
+   * *
+    *
+*/
+/*
+14.public class Pattern1
+{
+public static void main(String[] args) 
+{
+ int size = 5; 
+ for (int i = 1; i <= size; i++) 
+  {
+  for (int j = 1; j <= size; j++) 
+ {
+  if (i == 1 || i == size || j == 1 || j == size) 
+ {
+  System.out.print("* ");
+   } 
+else 
+{
+System.out.print("  "); 
+}
+}
+System.out.println();
+}
+}
+}
+output:
+* * * * *
+*       *
+*       *
+*       *
+* * * * *
+*/
+/*
+15.public class Pattern1 
+{
+public static void main(String[] args) 
+{
+ int n = 5; 
+int mid = n / 2 + 1; 
+for (int i = 1; i <= n; i++) 
+ {
+for (int j = 1; j <= n; j++) 
+ {
+if (i == mid || j == mid) 
+  {
+ System.out.print("* ");
+ } else 
+ {
+System.out.print("  ");
+}
+}
+System.out.println();
+ }
+ }
+}
+output:
+    *
+    *
+* * * * *
+    *
+    *
+*/
+/*
+16.public class Pattern1 {
+  public static void main(String[] args) 
+ {
+ int n = 5; 
+ for (int i = 1; i <= n; i++) 
+{         
+for (int j = 1; j <= n; j++) 
+ {      
+ if (i == j || i + j == n + 1) 
+ {
+System.out.print("* ");
+  } else
+{
+System.out.print("  ");
+ }
+  }
+System.out.println();
+}
+}
+}
+output:
+*       *
+  *   *
+    *
+  *   *
+*       *
+*/
+/*
+17.class Pattern1 {
+ public static void main(String[] args) {
+  int size = 7; 
+ int mid = size / 2;
+for (int i = 0; i < size; i++) {
+ for (int j = 0; j < size; j++) {
+if (i == 0 || i == size - 1 || j == 0 || j == size - 1)
+ System.out.print("*");
+else if (i == mid || j == mid)
+ System.out.print("*");
+else
+ System.out.print(" ");
+}
+ System.out.println();
+ }
+ }
+}
+output:
+*******
+*  *  *
+*  *  *
+*******
+*  *  *
+*  *  *
+*******
 */
