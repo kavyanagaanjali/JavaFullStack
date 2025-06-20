@@ -405,8 +405,8 @@ public class RemoveDuplicates {
         System.out.println("After removing duplicates: " + Arrays.toString(unique));
     }
 }
-
-/*19.find the missing number of sorted array of 1 to 100
+*/
+19.find the missing number of sorted array of 1 to 100
 public class MissingNumberFinder {
     public static int findMissing(int[] arr) {
         int n = 100;
